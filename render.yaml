@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: guldeninnggg-v14
+    runtime: docker
+    branch: codex/v1.4
+    plan: starter
+    region: frankfurt
+    healthCheckPath: /healthz
+    disk:
+      name: gulden-quota
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: APP_PASSWORD
+        sync: false

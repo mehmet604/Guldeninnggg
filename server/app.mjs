@@ -104,7 +104,7 @@ function validate({ mode, teacher, tone, message, history, photos }) {
 
 export async function createApp(env, upstream = askOpenAI) {
   const { OPENAI_API_KEY: key, APP_PASSWORD: password } = env;
-  const origin = new URL(env.APP_ORIGIN || 'http://localhost:8080');
+  const origin = new URL(env.APP_ORIGIN || env.RENDER_EXTERNAL_URL || 'http://localhost:8080');
   const local = origin.protocol === 'http:' && ['localhost', '127.0.0.1'].includes(origin.hostname);
   if ((!local && origin.protocol !== 'https:') || origin.href !== origin.origin + '/') {
     throw new Error('APP_ORIGIN must be the HTTPS origin without a path');

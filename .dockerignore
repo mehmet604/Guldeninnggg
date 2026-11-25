@@ -1,6 +1,7 @@
 *
 !server/
 !server/*.mjs
+!server/container-start.sh
 !package.json
 !teachers.js
 !index.html

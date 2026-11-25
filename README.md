@@ -15,6 +15,10 @@ Uygulama [localhost:8080](http://localhost:8080) adresinde açılır. İlk yapay
 
 ## Üretime alma
 
+[Render ile kur](https://render.com/deploy?repo=https://github.com/mehmet604/Guldeninnggg/tree/codex/v1.4)
+
+Bu bağlantı Docker, V1.4 dalı, sağlık kontrolü ve kotayı saklayan 1 GB diski otomatik ayarlar. Render özetinde ücreti kontrol et. Gizli alanlara OpenAI anahtarını ve sadece bu uygulama için seçtiğin 24–200 karakterlik rastgele atölye parolasını gir. Render'da uygulama adresi otomatik alınır.
+
 GitHub Pages, V1.3’ü sunan statik barındırmadır. V1.4’ün ön yüzünü ve API’sini aynı HTTPS adresinde çalıştırmak için bu depodaki Dockerfile’ı kullan. Sağlayıcıda tek bir uygulama örneği, yazılabilir kalıcı `/data` diski (UID 1000) ve en az 120 saniyelik HTTP yanıt zaman aşımı tanımla. Sağlık kontrolü `GET /healthz` yoludur. Aynı kalıcı diski yeniden dağıtımlarda kullan, çünkü SQLite aylık kotayı burada saklar.
 
 Barındırma sağlayıcısının gizli değişkenler bölümüne `OPENAI_API_KEY` ve `APP_PASSWORD` ekle. `APP_ORIGIN` gerçek HTTPS adresi olmalı (ör. `https://atolye.example.com`). Docker varsayılan olarak 8080 portunu dinler. OpenAI projesinde Responses ve Images kullanımı ile GPT-6 Luna ve GPT-Image-2.6 Flare erişimi gerekir. Anahtar, yalnızca bu uygulamaya ayrılmış bir projeden alınırsa maliyetleri izlemek kolaylaşır.
