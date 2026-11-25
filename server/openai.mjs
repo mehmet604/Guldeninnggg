@@ -1,3 +1,4 @@
+import { Buffer } from 'node:buffer';
 const endpoint = 'https://api.openai.com/v1';
 
 export async function askOpenAI(key, request, instructions) {

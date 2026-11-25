@@ -3,3 +3,7 @@
 !.env.example
 data/
 node_modules/
+
+cloudflare/public/
+.wrangler/
+.dev.vars*

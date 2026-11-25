@@ -15,6 +15,12 @@ Uygulama [localhost:8080](http://localhost:8080) adresinde açılır. İlk yapay
 
 ## Üretime alma
 
+### Cloudflare Workers Free
+
+Cloudflare Workers Free ve D1 seçeneği aylık kotayı kalıcı D1 veritabanında saklar. OpenAI kullanımı ayrıca ücretlenir. Cloudflare Workers Builds ile bu depoyu ve `codex/v1.4` dalını seç veya yetkili bir ortamdan `npx wrangler deploy` çalıştır. Wrangler statik dosyaları hazırlar ve D1 kaynağını bağlar. `OPENAI_API_KEY` ve `APP_PASSWORD` değerlerini Cloudflare'da **Secret** olarak kaydet. D1 tablosu ilk kullanım sırasında oluşturulur. Üretim adresinde bir metin, bir fotoğraf ve bir görsel isteğini doğrula.
+
+### Render
+
 [Render ile kur](https://render.com/deploy?repo=https://github.com/mehmet604/Guldeninnggg/tree/codex/v1.4)
 
 Bu bağlantı Docker, V1.4 dalı, sağlık kontrolü ve kotayı saklayan 1 GB diski otomatik ayarlar. Render özetinde ücreti kontrol et. Gizli alanlara OpenAI anahtarını ve sadece bu uygulama için seçtiğin 24–200 karakterlik rastgele atölye parolasını gir. Render'da uygulama adresi otomatik alınır.
