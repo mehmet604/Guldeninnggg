@@ -1,0 +1,11 @@
+{
+  "name": "guldeninnggg",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node server/start.mjs",
+    "test": "node --test"
+  }
+}

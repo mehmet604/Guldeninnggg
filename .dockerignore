@@ -1,0 +1,12 @@
+*
+!server/
+!server/*.mjs
+!package.json
+!teachers.js
+!index.html
+!app.js
+!style.css
+!sw.js
+!manifest.webmanifest
+!*.webp
+!icon-*.png
