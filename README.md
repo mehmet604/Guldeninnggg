@@ -1,2 +1,2 @@
-# Güldeninnggg V1.2
-ZIP içindeki tüm dosyaları GitHub ana dizinine yükleyin. Dosyalar düz dizindedir. Ana menü sabit, alt sayfa açılışında ekran en üste döner. ChatGPT bağlantısı ve fotoğraf aktarımı önceki sürümdeki gibi manuel.
+# Güldeninnggg V1.3
+Hoca seçimi sonrası ikinci soru, tek tuşla panoya kopyalama ve ChatGPT’ye geçiş. ChatGPT’de mesajı yapıştırıp göndermek gerekir. iPhone üzerinde test edilmelidir.
